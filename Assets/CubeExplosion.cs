@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class CubeExplosion : MonoBehaviour
 {
+    /*new code*/
+    [SerializeField] private GameObject obstacleExplosion;
+    /*end new code*/
+
     public float explosionForce = 3f;
     public float explosionRadius = 10f;
     public float fadeOutTime = 2f;
@@ -32,9 +36,15 @@ public class CubeExplosion : MonoBehaviour
                 if (hitRb != null && hit.gameObject.CompareTag("Obstacle"))
                 {
                     hitRb.AddExplosionForce(explosionForce, explosionPos, explosionRadius, 10f, ForceMode.Impulse);
+
+                    /*new code*/
+                    Instantiate(obstacleExplosion, transform.position, transform.rotation);
+                    Destroy(hit.gameObject);
+                    /*end new code*/
+                    
                     // hit.gameObject.GetComponent<Renderer>().enabled = false;
                     // hit.gameObject.GetComponent<Collider>().enabled = false;
-                    Destroy(hit.gameObject, 5f);
+                    // Destroy(hit.gameObject, 5f);
                 }
             }
 
