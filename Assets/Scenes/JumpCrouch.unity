@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input:
-    actionPath: /actions/default/in/Move
+    actionPath: /actions/default/in/TouchPad
     needsReinit: 0
   jumpInput:
     actionPath: /actions/default/in/Jump
