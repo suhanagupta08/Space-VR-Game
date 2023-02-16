@@ -38,7 +38,7 @@ public class CubeExplosion : MonoBehaviour
                     hitRb.AddExplosionForce(explosionForce, explosionPos, explosionRadius, 10f, ForceMode.Impulse);
 
                     /*new code*/
-                    Instantiate(obstacleExplosion, transform.position, transform.rotation);
+                    Instantiate(obstacleExplosion, hitRb.transform.position, hitRb.transform.rotation);
                     Destroy(hit.gameObject);
                     /*end new code*/
                     
