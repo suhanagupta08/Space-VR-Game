@@ -39,6 +39,7 @@ public class LeverInteractable : MonoBehaviour
             Vector3 euler = leverPivot.localEulerAngles;
             euler.z = Mathf.Clamp(euler.z + angleDelta, minAngle, maxAngle);
             leverPivot.localEulerAngles = euler;
+            print(euler.z);
 
             // trigger the event if the lever has been pulled past a threshold angle
             if (euler.z >= maxAngle)
