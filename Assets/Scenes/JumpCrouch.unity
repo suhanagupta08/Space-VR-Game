@@ -347,15 +347,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 306470042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad77b49fbba602b4ea27ac1c7d339bee, type: 3}
+  m_Script: {fileID: 11500000, guid: 210aa4b4cc05a9846ac5a13f1562b1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lever1Pivot: {fileID: 1848819371}
-  lever2Pivot: {fileID: 1923754278}
-  lever3Pivot: {fileID: 272685619}
-  reqAngle1: -45
-  reqAngle2: 45
-  reqAngle3: -45
+  threshold1: 44.5
+  threshold2: -44.5
+  threshold3: 44.5
 --- !u!4 &306470044
 Transform:
   m_ObjectHideFlags: 0
@@ -3174,7 +3171,6 @@ GameObject:
   - component: {fileID: 1606895505}
   - component: {fileID: 1606895500}
   - component: {fileID: 1606895506}
-  - component: {fileID: 1606895499}
   m_Layer: 0
   m_Name: Lever_1
   m_TagString: Untagged
@@ -3182,20 +3178,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1606895499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606895498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 210aa4b4cc05a9846ac5a13f1562b1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threshold: 45
-  num: 0
 --- !u!59 &1606895500
 HingeJoint:
   m_ObjectHideFlags: 0
