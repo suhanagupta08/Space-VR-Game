@@ -5,12 +5,12 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float detectionRadius = 2.0f;
+    public float detectionRadius = 2.5f;
     public Transform playerTransform;
-    private Animation doorAnimation;
+    private Animator doorAnimation;
     void Start()
     {
-        doorAnimation = GetComponent<Animation>();
+        doorAnimation = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -18,7 +18,8 @@ public class DoorController : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, playerTransform.position) < detectionRadius)
         {
-            doorAnimation.Play("glass_door_open ");
+            print("reached door");
+            doorAnimation.Play("Base Layer.glass_door_open",0,-1);
         }
     }
 }
