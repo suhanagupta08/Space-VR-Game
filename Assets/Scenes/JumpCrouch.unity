@@ -3194,7 +3194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210aa4b4cc05a9846ac5a13f1562b1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 45
+  threshold: 44.5
   num: 0
 --- !u!59 &1606895500
 HingeJoint:
