@@ -10,6 +10,7 @@ TagManager:
   - Slide
   - Obstacle
   - Bomb
+  - player
   layers:
   - Default
   - TransparentFX

@@ -1352,8 +1352,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -38.437317
-    max: 36.71422
+    min: -45
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -3174,6 +3174,7 @@ GameObject:
   - component: {fileID: 1606895505}
   - component: {fileID: 1606895500}
   - component: {fileID: 1606895506}
+  - component: {fileID: 1606895499}
   m_Layer: 0
   m_Name: Lever_1
   m_TagString: Untagged
@@ -3181,6 +3182,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1606895499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606895498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210aa4b4cc05a9846ac5a13f1562b1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 45
+  num: 0
 --- !u!59 &1606895500
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -3206,8 +3221,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -38.437317
-    max: 36.71422
+    min: -45
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -3924,8 +3939,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -38.437317
-    max: 36.71422
+    min: -45
+    max: 45
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
