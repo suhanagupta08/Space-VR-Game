@@ -5,10 +5,6 @@
     "com.unity.ide.visualstudio": "2.0.17",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.probuilder": "4.5.2",
-<<<<<<< HEAD
-    "com.unity.terrain-tools": "3.0.2-preview.3",
-    "com.unity.test-framework": "1.1.29",
-=======
     "com.unity.test-framework": "1.1.33",
 >>>>>>> 197ea4da57fa81205f688f02989e482711818be9
     "com.unity.textmeshpro": "3.0.6",
