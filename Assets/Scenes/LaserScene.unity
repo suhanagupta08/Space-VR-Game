@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0f65497c59fa0e649b2ec91a36c41d85, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.0142627265, g: 0.013979998, b: 0.039484564, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -387,6 +387,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4416347176131427359, guid: 3925e022072f0474a8dab88c2fdaf0ce, type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4416347176314923489, guid: 3925e022072f0474a8dab88c2fdaf0ce, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -488,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -726,7 +730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464102, guid: 10b4213a276bd0f4d93c345fd1420858, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.17
+      value: 1.743
       objectReference: {fileID: 0}
     - target: {fileID: 464102, guid: 10b4213a276bd0f4d93c345fd1420858, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2754,7 +2758,7 @@ MonoBehaviour:
   playerTransform: {fileID: 96383250}
 --- !u!95 &1502020986
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2767,10 +2771,11 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1563652832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3110,7 +3115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464102, guid: 10b4213a276bd0f4d93c345fd1420858, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.702
+      value: 2.094
       objectReference: {fileID: 0}
     - target: {fileID: 464102, guid: 10b4213a276bd0f4d93c345fd1420858, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3515,7 +3520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464102, guid: 10b4213a276bd0f4d93c345fd1420858, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.589
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 464102, guid: 10b4213a276bd0f4d93c345fd1420858, type: 3}
       propertyPath: m_LocalPosition.z
