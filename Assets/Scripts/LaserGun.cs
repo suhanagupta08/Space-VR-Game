@@ -14,8 +14,8 @@ public class LaserGun : MonoBehaviour
 
     public LineRenderer lineRenderer;
     private AudioSource laserAudioSource;
-    public float laserWidth = 0.3f;
-    public float laserMaxLength = 1000f;
+    public float laserWidth = 0.01f;
+    public float laserMaxLength = 500f;
     private RaycastHit hit;
 
     void Start() 
@@ -46,7 +46,7 @@ public class LaserGun : MonoBehaviour
         {
             
             lineRenderer.positionCount = 2;
-            lineRenderer.SetPosition(0, raycastOrigin.position);
+            lineRenderer.SetPosition(0, new Vector3(raycastOrigin.position.x, raycastOrigin.position.y+0.05f, raycastOrigin.position.z));
             lineRenderer.SetPosition(1, hit.point);
                     
             
