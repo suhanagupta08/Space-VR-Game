@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class VerticalPlatform : MonoBehaviour
 {
+    public float detectionRadius = 1.5f;
+    public GameObject other;
+    public Transform playerTransform;
     public Transform pointA;
     public Transform pointB;
     public float moveSpeed = 2f;
@@ -27,26 +30,33 @@ public class VerticalPlatform : MonoBehaviour
             else if (transform.position == pointB.position)
             {
                 currentTarget = pointA.position;
+                isMoving = false;
+            other.transform.parent = null;
             }
         }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("player"))
+        if (Vector3.Distance(transform.position, playerTransform.position) < detectionRadius)
         {
-            isMoving = true;
+             isMoving = true;
             other.transform.parent = transform;
         }
     }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("player"))
-        {
-            isMoving = false;
-            other.transform.parent = null;
-        }
-    }
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.CompareTag("player"))
+    //     {
+    //         isMoving = true;
+    //         other.transform.parent = transform;
+    //     }
+    // }
+
+    // void OnTriggerExit(Collider other)
+    // {
+    //     if (other.CompareTag("player"))
+    //     {
+    //         isMoving = false;
+    //         other.transform.parent = null;
+    //     }
+    // }
     
 }
