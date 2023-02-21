@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0142627265, g: 0.013979998, b: 0.039484564, a: 1}
+  m_IndirectSpecularColor: {r: 0.014242667, g: 0.014003554, b: 0.03942826, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8608,7 +8608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a3010062f81cf40ba361fbf16388a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: LeverScene
 --- !u!65 &2005566137
 BoxCollider:
   m_ObjectHideFlags: 0
