@@ -5,13 +5,16 @@ using Valve.VR.InteractionSystem;
 
 public class ButtonPressEvent : MonoBehaviour
 {
+    public Light light;
     public void OnPress(Hand hand)
     {
         Debug.Log("Button pressed");
+        light.enabled = true;
     }
     // Start is called before the first frame update
     void Start()
     {
+        light.enabled = false;
         
     }
 
