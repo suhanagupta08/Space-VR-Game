@@ -52,6 +52,7 @@ public class PosCheck : MonoBehaviour
         if(hinge1.angle>=threshold1 && hinge2.angle<=threshold2 && hinge3.angle>=threshold3){
            //add scene change
             print(" obstacle cleared");
+            // SceneManager.LoadScene("Shooting Game");
         }
     }
 }
