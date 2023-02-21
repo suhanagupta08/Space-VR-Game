@@ -4042,6 +4042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90253ea38fb3394e83f218a6a3df4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1804565171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,8 +4165,9 @@ GameObject:
   - component: {fileID: 1825650202}
   - component: {fileID: 1825650201}
   - component: {fileID: 1825650200}
-  - component: {fileID: 1825650199}
   - component: {fileID: 1825650204}
+  - component: {fileID: 1825650199}
+  - component: {fileID: 1825650205}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -4309,9 +4312,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825650198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 089ada70fdf84fb46a643d808e09e3e9, type: 3}
+  m_Script: {fileID: 11500000, guid: f90253ea38fb3394e83f218a6a3df4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 2033954783}
+  player: {fileID: 2033954795}
+--- !u!54 &1825650205
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825650198}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1833148766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,127 +5209,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
   m_PrefabInstance: {fileID: 2033954780}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2033954786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &2033954795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+  m_PrefabInstance: {fileID: 2033954780}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954781}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f6bbe1a2abd1c84790fba654c33084a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabAction:
-    actionPath: 
-    needsReinit: 1
-  leftHand: {fileID: 2033954785}
-  rightHand: {fileID: 2033954784}
-  maxGrabDistance: 2
-  grabbableMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &2033954787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785eb87f9ed07e4449ccd57cc6d3d739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  climbing: 0
-  climbingWall: {fileID: 454472553}
-  climbingHand: {fileID: 2033954784}
-  handClimbingOffset: {x: 0, y: -0.2, z: 0}
-  climbSpeed: 1.5
-  grip:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  inputSource: 2
---- !u!135 &2033954789
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2033954790
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954784}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &2033954798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2b4538ed9347147ae37c9d1b990950, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  climbing: 0
-  climbingWall: {fileID: 454472553}
-  climbingHand: {fileID: 2033954785}
-  handClimbingOffset: {x: 0, y: -0.2, z: 0}
-  climbSpeed: 1.5
-  grip:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  inputSource: 1
---- !u!135 &2033954800
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954785}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2033954802
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033954785}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &2088126313
 GameObject:
   m_ObjectHideFlags: 0

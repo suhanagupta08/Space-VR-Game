@@ -6,7 +6,9 @@ using Valve.VR.InteractionSystem;
 
 public class SimpleAttach : MonoBehaviour
 {
-    private Interactable interactable; 
+    private Interactable interactable;
+    public CharacterController characterController;
+    public Transform player;
 
 
 
@@ -36,9 +38,17 @@ public class SimpleAttach : MonoBehaviour
             hand.AttachObject(gameObject, grabType);
             hand.HoverLock(interactable);
             hand.HideGrabHint();
+
+            MovePlayer();
+
+
         }else if(isGrabEnding){
             hand.DetachObject(gameObject);
             hand.HoverUnlock(interactable);
         }
+    }
+
+    public void MovePlayer(){
+        characterController.Move(new Vector3(player.position.x, player.position.y + 10f, player.position.z));
     }
 }
