@@ -19,13 +19,15 @@ public class SceneHandler : MonoBehaviour
 
     public void PointerClick(object sender, PointerEventArgs e)
     {
+        Debug.Log(e.target.name);
         if (e.target.name == "Cube")
         {
 SceneManager.LoadScene("TutorialScene");
             Debug.Log("Cube was clicked");
-        } else if (e.target.name == "Button")
+        } else if (e.target.name == "Play")
         {
             Debug.Log("Button was clicked");
+            SceneManager.LoadScene("ShootingGame");
         }
         else if (e.target.name == "Tutorial")
         {
