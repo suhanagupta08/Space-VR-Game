@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea2f93181da36248a36abafaae3c1f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alienExplosion: {fileID: 5587333519594629070, guid: c34c359c899647148a75c1c18db29282, type: 3}
+  alienExplosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
 --- !u!1 &3644085977280583398
 GameObject:
   m_ObjectHideFlags: 0

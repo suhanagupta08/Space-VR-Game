@@ -18,7 +18,7 @@ public class ChangeScene : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        print("collision");
+        Debug.Log("collision", other.gameObject);
         if(other.gameObject.CompareTag("player"))
         {
              print("changing scene");
