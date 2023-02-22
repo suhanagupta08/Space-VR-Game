@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Door2Controller : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Door2Controller : MonoBehaviour
         {
             print("reached door");
             doorAnimation.Play("Base Layer.door_2_open", 0, -1);
+             SceneManager.LoadScene("EnterScene");
         }
     }
 }
