@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Valve.VR;
+using UnityEngine.SceneManagement;
+
 
 public class GameOver : MonoBehaviour
 {
@@ -39,6 +41,13 @@ public class GameOver : MonoBehaviour
 
         }
     }
+    
+    private void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
 
     private void Update()
     {
@@ -48,6 +57,8 @@ public class GameOver : MonoBehaviour
             gameOverUI.SetActive(true);
             audioSource.clip = gameOversound;
             audioSource.Play();
+            Invoke("RestartScene", 3f);
+
 
         }
     }
