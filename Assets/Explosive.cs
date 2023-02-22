@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Explosive : MonoBehaviour
 {
     // [SerializeField] private GameObject obstacleExplosion;
@@ -11,6 +10,8 @@ public class Explosive : MonoBehaviour
     public float force = 5f;
 
     public GameObject explosionEffect;
+    // public GameObject obstacle;
+    // public ParticleSystem part;
 
     float countdown;
     bool hasExploded = false;
@@ -18,6 +19,8 @@ public class Explosive : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
         countdown = delay;
+        // part = obstacle.GetComponent<ParticleSystem>();
+
     }
 
     // Update is called once per frame
@@ -30,7 +33,7 @@ public class Explosive : MonoBehaviour
     }
 
     void Explode(){
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+        //Instantiate(explosionEffect, transform.position, transform.rotation);
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
@@ -40,6 +43,8 @@ public class Explosive : MonoBehaviour
                 rb.AddExplosionForce(force, transform.position, radius);
 
                 Instantiate(explosionEffect, rb.transform.position, rb.transform.rotation);
+                // part.Play();
+                // Destroy(nearbyObject.gameObject, part.main.duration);
                 Destroy(nearbyObject.gameObject);
             }
         }

@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GrabThrow.unity
     guid: 839a933a4bab04fa48cf1c2a783f39e0
+  - enabled: 1
+    path: Assets/Scenes/ClimbScene.unity
+    guid: 960eb7f2ed16449f0974523471a44c13
+  - enabled: 1
+    path: Assets/Scenes/ShootingGame.unity
+    guid: 915238865b0bd7a479b23d3aeda7893b
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: f534059c2dedc384fa35bb519d793882
+  - enabled: 1
+    path: Assets/Scenes/UIScene.unity
+    guid: 5b6b8b53427fe0a4085aa7bf483e48e4
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: f292d30ae67d0044b80c122f3a6fa296, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5aab3ebc629ff2145ac2a3ebad951ce6, type: 2}
