@@ -11,6 +11,8 @@ TagManager:
   - Obstacle
   - Bomb
   - player
+  - Obstacles
+  - Climbable
   layers:
   - Default
   - TransparentFX
