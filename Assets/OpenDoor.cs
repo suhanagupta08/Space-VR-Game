@@ -8,11 +8,14 @@ public class OpenDoor : MonoBehaviour
     public float detectionRadius = 1.00f;
     public Transform playerTransform;
     public Animator doorAnimation;
+    public GameObject door;
 
     public void OnPress(Hand hand)
     {
         Debug.Log("Button pressed");
         doorAnimation.Play("Base Layer.door_1_open", 0, -1);
+        Destroy(door);
+
 
     }
     // Start is called before the first frame update
