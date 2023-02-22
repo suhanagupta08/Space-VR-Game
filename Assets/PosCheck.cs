@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PosCheck : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PosCheck : MonoBehaviour
     public float threshold1=44.5f;
     public float threshold2=-44.5f;
     public float threshold3=44.5f;
+    float time;
+    float timeDelay;
     
 
     // Start is called before the first frame update
@@ -25,6 +28,8 @@ public class PosCheck : MonoBehaviour
         hinge1= lever1.GetComponent<HingeJoint>();
         hinge2= lever2.GetComponent<HingeJoint>();
         hinge3= lever3.GetComponent<HingeJoint>();
+        time=0f;
+        timeDelay=2f;
         
     }
 
@@ -52,7 +57,12 @@ public class PosCheck : MonoBehaviour
         if(hinge1.angle>=threshold1 && hinge2.angle<=threshold2 && hinge3.angle>=threshold3){
            //add scene change
             print(" obstacle cleared");
-            // SceneManager.LoadScene("Shooting Game");
+            time=time+1f*Time.deltaTime;
+
+            if(time>=timeDelay){
+                SceneManager.LoadScene("GrabThrow");
+
+            }
         }
     }
 }
