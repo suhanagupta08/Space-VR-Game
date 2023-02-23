@@ -14,7 +14,7 @@ public class ControlClimb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        climbAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("default", "Climb");
+        //climbAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("default", "Climb");
     }
 
 

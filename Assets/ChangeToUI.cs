@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class RestartLaserScene : MonoBehaviour
+public class ChangeToUI : MonoBehaviour
 {
+    public float detectionRadius = 2.00f;
+    public Transform playerTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,15 +15,10 @@ public class RestartLaserScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log(other.gameObject.CompareTag("player"));
-        if(other.gameObject.CompareTag("player"))
+        if (Vector3.Distance(transform.position, playerTransform.position) < detectionRadius)
         {
-            SceneManager.LoadScene("LaserScene");
+            print("reached door");
+             SceneManager.LoadScene("UIScene");
         }
     }
 }
