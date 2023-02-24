@@ -18,6 +18,7 @@ public class EndScript : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, playerTransform.position) < detectionRadius)
         {
+            Debug.Log("done");
             text.SetActive(true);
         }
 

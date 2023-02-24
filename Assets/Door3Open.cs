@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Door3Open : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float detectionRadius = 2.0f;
+    public float detectionRadius = 5.0f;
     public Transform playerTransform;
     private Animator doorAnimation;
     void Start()
